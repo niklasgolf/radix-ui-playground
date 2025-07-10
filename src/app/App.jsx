@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <Flex direction="column" align="center" justify="center" className={styles.container}>
-      <Text size="8">Welcome to our page</Text>
+      <Text size="8">Welcome to my page!</Text>
       <Flex gap="3">
         <Button onClick={() => router.push('/home')}>Login</Button>
         <Button onClick={() => router.push('/notmember')}>Not a member</Button>
