@@ -28,3 +28,7 @@ npm install \
 ---
 
 npm install @radix-ui/themes (Install @radix-ui/themes package.)
+
+---
+
+npm install next-pwa (Install the next-pwa package for PWA functionality.)
