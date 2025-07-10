@@ -1,5 +1,6 @@
 'use client';
 
+import './globals.css';
 import '@radix-ui/themes/styles.css';
 import { Theme } from '@radix-ui/themes';
 import { ThemeProvider, useTheme } from '../context/ThemeContext';

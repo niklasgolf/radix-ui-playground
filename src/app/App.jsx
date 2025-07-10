@@ -1,4 +1,3 @@
-
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
@@ -11,12 +10,14 @@ export default function App() {
 
   return (
     <div className={styles.wrapper}>
-      <Text size="8" className={styles.welcomeText}>Welcome to our page!</Text>
-      <Flex gap="3" justify="center">
-        <Button className={styles.primaryButton} onClick={() => router.push('/home')}>Login</Button>
-        <Button className={styles.secondaryButton} onClick={() => router.push('/notmember')}>Not a member</Button>
-      </Flex>
-      <ThemeSwitcher />
+      <main className={styles.centeredDiv}>
+        <Text size="8" className={styles.welcomeText}>Welcome to our page!</Text>
+        <Flex gap="3">
+          <Button className={styles.primaryButton} onClick={() => router.push('/home')}>Login</Button>
+          <Button className={styles.secondaryButton} onClick={() => router.push('/notmember')}>Not a member</Button>
+        </Flex>
+        <ThemeSwitcher />
+      </main>
     </div>
   );
 }
