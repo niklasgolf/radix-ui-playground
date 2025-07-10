@@ -1,3 +1,4 @@
+
 'use client';
 import React from 'react';
 import { useRouter } from 'next/navigation';
@@ -9,13 +10,13 @@ export default function App() {
   const router = useRouter();
 
   return (
-    <Flex direction="column" align="center" justify="center" className={styles.container}>
-      <Text size="8">Welcome to my page!</Text>
-      <Flex gap="3">
-        <Button onClick={() => router.push('/home')}>Login</Button>
-        <Button onClick={() => router.push('/notmember')}>Not a member</Button>
+    <div className={styles.wrapper}>
+      <Text size="8" className={styles.welcomeText}>Welcome to our page!</Text>
+      <Flex gap="3" justify="center">
+        <Button className={styles.primaryButton} onClick={() => router.push('/home')}>Login</Button>
+        <Button className={styles.secondaryButton} onClick={() => router.push('/notmember')}>Not a member</Button>
       </Flex>
       <ThemeSwitcher />
-    </Flex>
+    </div>
   );
 }

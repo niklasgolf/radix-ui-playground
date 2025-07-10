@@ -1,8 +1,56 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 2rem;
+  gap: 1.5rem;
   align-items: center;
+  text-align: center;
+  max-width: 414px; /* iPhone 8 Plus width */
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.welcomeText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.primaryButton {
+  border-radius: 9999px;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #f43f5e; /* Example: Firebase-like primary color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: #e11d48; /* Darker shade on hover */
+}
+
+.secondaryButton {
+  border-radius: 9999px;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #fecdd3; /* Lighter version for secondary */
+  color: #e11d48;
+  border: 1px solid #e11d48;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background-color: #fda4af; /* Darker shade on hover */
+}
+
+.themeSwitcherContainer {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
 }

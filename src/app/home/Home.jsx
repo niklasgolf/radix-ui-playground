@@ -6,9 +6,9 @@ import styles from './Home.module.css';
 
 export default function Home() {
   return (
-    <Flex direction="column" align="center" justify="center" className={styles.container}>
-      <Heading as="h1" size="8">Home Page</Heading>
-      <Text>Welcome to the home page!</Text>
-    </Flex>
+    <div className={styles.wrapper}>
+      <Heading as="h1" size="8" className={styles.heading}>Home Page</Heading>
+      <Text className={styles.text}>Welcome to the home page!</Text>
+    </div>
   );
 }

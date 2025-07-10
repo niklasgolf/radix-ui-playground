@@ -1,7 +1,21 @@
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 2rem;
+  gap: 1.5rem;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  max-width: 414px; /* iPhone 8 Plus width */
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.2rem;
 }
