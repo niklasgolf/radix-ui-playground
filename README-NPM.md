@@ -24,3 +24,7 @@ npm install \
 @radix-ui/react-toolbar \
 @radix-ui/react-tooltip \
 @radix-ui/react-icons
+
+---
+
+npm install @radix-ui/themes (Install @radix-ui/themes package.)

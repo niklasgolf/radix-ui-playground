@@ -1,6 +1,0 @@
-@import './radix-colors.css';
-
-body {
-  background-color: var(--gray-100);
-  color: var(--gray-900);
-}

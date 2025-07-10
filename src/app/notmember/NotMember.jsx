@@ -1,14 +1,13 @@
-
 'use client';
 
 import React from 'react';
-import styles from './NotMember.module.css';
+import { Flex, Heading, Text } from '@radix-ui/themes';
 
 export default function NotMember() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>Not a Member</h1>
-      <p>This is the page for users who are not members.</p>
-    </div>
+    <Flex direction="column" align="center" justify="center" style={{ height: '100vh' }}>
+      <Heading as="h1" size="8">Not a Member</Heading>
+      <Text>This is the page for users who are not members.</Text>
+    </Flex>
   );
 }

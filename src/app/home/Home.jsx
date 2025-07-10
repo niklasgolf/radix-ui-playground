@@ -1,14 +1,13 @@
-
 'use client';
 
 import React from 'react';
-import styles from './Home.module.css';
+import { Flex, Heading, Text } from '@radix-ui/themes';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>Home Page</h1>
-      <p>Welcome to the home page!</p>
-    </div>
+    <Flex direction="column" align="center" justify="center" style={{ height: '100vh' }}>
+      <Heading as="h1" size="8">Home Page</Heading>
+      <Text>Welcome to the home page!</Text>
+    </Flex>
   );
 }
